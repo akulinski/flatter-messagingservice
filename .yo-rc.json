@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.flatter.messagingservice"
+    },
+    "jhipsterVersion": "5.8.2",
+    "applicationType": "microservice",
+    "baseName": "messagingservice",
+    "packageName": "com.flatter.messagingservice",
+    "packageFolder": "com/flatter/messagingservice",
+    "serverPort": "8082",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Zjk0YjMxYmJjNTUyNDZlZDgxMTc2NmQ0MzA4OTAwNTliMjkxM2UwNDNlNDdjNmEzYTQ2MDQ4MTAzODc4NzAzNGJiMzU4YTdjN2NiN2RhN2RiZmU1MDA3NTZiZjQwMDFiMGYyZGQwOWYxNDhlYTczODJkMGJlOTQ3NWZjZGZhOWM=",
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
