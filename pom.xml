@@ -378,7 +378,7 @@
         <dependency>
             <groupId>com.flatter</groupId>
             <artifactId>flatter-COMMON</artifactId>
-            <version>0.0.2</version>
+            <version>0.0.3</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
