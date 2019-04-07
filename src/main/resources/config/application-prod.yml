@@ -24,7 +24,7 @@ eureka:
         prefer-ip-address: true
     client:
         service-url:
-            defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+            defaultZone:  https://admin:admin@microserviceregistry.herokuapp.com/eureka/
 
 spring:
     devtools:
@@ -32,18 +32,19 @@ spring:
             enabled: false
         livereload:
             enabled: false
+
     cloud:
         stream:
             kafka:
                 binder:
-                    brokers: localhost
-                    zk-nodes: localhost
+                    brokers: 192.168.0.26
+                    zk-nodes: 192.168.0.26
             bindings:
-                output:
-                    destination: topic-jhipster
+                input:
+                    destination: messages
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/messagingservice
+        url: jdbc:postgresql://localhost:5433/messagingservice
         username: messagingservice
         password:
         hikari:

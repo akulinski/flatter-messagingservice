@@ -1,0 +1,28 @@
+
+entity Message{
+	creationDate Instant,
+    content TextBlob required,
+    isSeen Boolean,
+    sender String,
+    receiver String
+}
+
+entity Participant{
+	login String
+}
+
+entity Conversation{
+
+}
+
+relationship ManyToOne{
+	Participant to Conversation
+}
+
+relationship ManyToOne{
+	Message to Conversation
+}
+
+
+
+

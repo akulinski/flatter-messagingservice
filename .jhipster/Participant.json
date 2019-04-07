@@ -1,0 +1,28 @@
+{
+    "name": "Participant",
+    "fields": [
+        {
+            "fieldName": "login",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "conversation",
+            "otherEntityRelationshipName": "participant",
+            "relationshipName": "conversation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190407151818",
+    "entityTableName": "participant",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "messagingservice",
+    "applications": "*",
+    "microserviceName": "messagingservice"
+}

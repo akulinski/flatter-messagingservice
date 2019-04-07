@@ -1,0 +1,48 @@
+{
+    "name": "Message",
+    "fields": [
+        {
+            "fieldName": "creationDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "content",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "isSeen",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "sender",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "receiver",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "conversation",
+            "otherEntityRelationshipName": "message",
+            "relationshipName": "conversation",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190405184529",
+    "entityTableName": "message",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "messagingservice",
+    "applications": "*",
+    "microserviceName": "messagingservice"
+}

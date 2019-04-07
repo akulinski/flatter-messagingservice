@@ -36,6 +36,11 @@ public class CacheConfiguration {
     @Bean
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
+            cm.createCache(com.flatter.messagingservice.domain.Message.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flatter.messagingservice.domain.Conversation.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flatter.messagingservice.domain.Conversation.class.getName() + ".messages", jcacheConfiguration);
+            cm.createCache(com.flatter.messagingservice.domain.Participant.class.getName(), jcacheConfiguration);
+            cm.createCache(com.flatter.messagingservice.domain.Conversation.class.getName() + ".participants", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
